@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tourism Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header-button {
+            background-color: #2ecc71;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .popular-destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .destination {
+            width: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        .destination:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+        .destination-body {
+            padding: 20px;
+        }
+        .destination-body h3 {
+            margin: 0;
+            padding: 0;
+        }
+        .destination-body p {
+            margin: 10px 0;
+        }
+        .booking-form {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .booking-form button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel and Tourism Company</h1>
+        <button class="header-button">Home</button>
+        <button class="header-button">Popular Destinations</button>
+        <button class="header-button">Contact Us</button>
+    </header>
+
+    <section class="popular-destinations">
+        <div class="destination">
+            <img src="destination1.jpg" alt="Destination 1">
+            <div class="destination-body">
+                <h3>Destination 1</h3>
+                <p>Description of Destination 1</p>
+            </div>
+        </div>
+        <!-- Add more destinations as needed -->
+    </section>
+
+    <section class="booking-form">
+        <h2>Book Your Trip</h2>
+        <form>
+            <label for="destination">Choose Destination:</label>
+            <select id="destination" name="destination">
+                <option value="destination1">Destination 1</option>
+                <option value="destination2">Destination 2</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <script>
+        // Add any JavaScript functionality here
+    </script>
+</body>
+</html>
